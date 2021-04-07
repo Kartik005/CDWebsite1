@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+
+    <! #9fa8a3 #c5d5cb #e3e0cf>
+
+
+    <style>
+        .flex {
+            display: flex;
+        }
+
+        a:visited {
+            color: white;
+            text-decoration: none;
+        }
+        
+        body {
+            background-color: #000000;
+            color: white;
+            background-image: url('background4.jpg');
+            background-image: 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        p {
+            padding: 20px;
+            font-size: large;
+            margin: 0% 20%;
+        }
+        
+        h1 {
+            text-align: center;
+            padding: 10px;
+            text-decoration: underline;
+            margin-top: 50px;
+        }
+        
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        
+        textarea {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer{
+            
+            background-color:rgb(26, 23, 31);
+            padding: 1%;
+            margin-top: 10px;
+            margin-left: -10px;
+            margin-right: -10px;
+            opacity: 0.6;
+        }
+        footer:hover{
+            opacity: 1;
+        }
+        
+        .domain-icon {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+        }
+        
+        .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+            height: 100px;
+        }
+        
+        .dp {
+            display: inline-block;
+            margin-top: 100px;
+            margin-left: 150px;
+            width: 200px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(231, 221, 221);
+            border-radius: 50%;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            position: relative;
+        }
+        
+        .topnav #myLinks {
+            display: none;
+        }
+        
+        .topnav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+        
+        .topnav a.icon {
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        /* image overlay*/
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .image {
+            display: block;
+            width: 200px;
+            height: auto;
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(231, 221, 221);
+            border-radius: 50%;
+        }
+        
+        .container {
+            position: relative;
+            width: 50%;
+            max-width: 500px;
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            transition: 0.5s ease;
+            opacity: 0;
+            color: white;
+            font-size: 15px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 60px;
+            text-align: left;
+        }
+        
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        
+        
+/* icons */
+        .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: auto;
+            height: auto;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+            
+        }
+        .fa-facebook{
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter{
+            background: #55ACEE;
+            color: white;
+        }
+        .fa-instagram{
+            background: #125688;
+            color: white;
+        }
+        .fa-linkedin{
+            background: #0E76A8;
+            color: white;
+        }
+/* icons end */
+
+        .submit_button {
+            background-color: #3B5998;
+            padding: 5px;
+            margin-top: 10px;
+            color: #ccc;
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            border: 1px solid #333;
+        }
+
+
+        @media (max-width: 600px) {
+            .flex {
+                display: block;
+                margin-left: 40%;
+                margin-right: auto;
+            }
+            .image {
+                display: block;
+                margin-top: 10%;
+                width: 150px;
+            }
+
+            .domain-icon{
+                width: 200px;
+            }
+            .container {
+            position: relative;
+            width: 50%;
+            max-width: 300px;
+            
+            }
+            .overlay{
+                padding-left: 10px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="main_page.html"> <img class="logo" src="Logo1.png">
+    </div> -->
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+<logo>
+    <center><h1 style="font-family: lobster; color:#E94B3CFF; text-decoration: none;">CAFE DEV</h1></center>
+</logo>
+    <! nav bar>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <div class="topnav">
+        <a href="#menu" class="active">Menu</a>
+
+        <div id="myLinks">
+            <a href="#about_us">About Us</a>
+            <a href="#domains">Domains</a>
+            <a href="#members">Members</a>
+            <a href="#contact_us">Contact Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+    <div id="about_us">
+        <h1>About Us</h1>
+        <p>
+            Heyyy! We are Cafe Dev. Our innitiative is to help students explore every domain to find the domain of their interest and passion. We will do our best to help you in getting the opportunities that will shape your career. As we all know, right now we don't
+            have time but we have opportunities, later on we will have all the time but no opportunities. So do not miss your opportunities that may change the course of your future.
+        </p>
+    </div>
+
+    <div id="domains">
+        <h1>Domains</h1>
+        <img class="domain-icon" src="iot.jpg">
+        <a href=""><h2>Internet of things</h2></a>
+        <p>
+            Internet of things is the mass communication and interconnectivity of multiple devices through the internet. With the help of various sensors we can send information to devices which can then be executed as per the instructions.
+        </p>
+
+        <img class="domain-icon" src="ar.jpg">
+        <a href=""><h2>Augmented Reality</h2></a>
+        <p>
+            Augmented reality is the technology of presenting animations in the real world in real time. The world of the user is digitally "augmented" to provide the experience.
+        </p>
+
+        <img class="domain-icon" src="ml.jpg">
+        <a href=""><h2>Machine Learning</h2></a>
+        <p>
+            Teaching a computer how to do a task or to predict an outcome is done with the help of machine learning. With the help of various algorithms the machine can learn itself without the need of help by humans.
+        </p>
+    </div>
+
+<section>
+    <div id="members">
+        <h1>Members</h1>
+        <div class="flex">
+            <div class="container"><img alt="avatar" class="image" src="Akhilesh sir.png">
+                <div class="overlay">Akhilesh Mehra</div>
+            </div>
+            <div class="container"><img alt="avatar" class="image" src="Arnab sir.png">
+                <div class="overlay">Arnab Saha</div>
+            </div>
+            <div class="container"><img alt="avatar" class="image" src="Garima ma'am.png">
+                <div class="overlay">Garima Goyal</div>
+            </div>
+            <div class="container"><img alt="avatar" class="image" src="Mihir sir.png">
+                <div class="overlay">Mihir Jain</div>
+            </div>
+            <div class="container"><img alt="avatar" class="image" src="Shubham sir.png">
+                <div class="overlay">Shubham Gupta</div>
+            </div>
+            <div class="container"><img alt="avatar" class="image" src="Vasvi ma'am.png">
+                <div class="overlay">Vasvi Sood</div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+        <div class="flex">
+            <div class="container"><img alt="avatar" class="image" src="Kartik Attri.jpeg">
+                <div class="overlay">Kartik Attri</div>
+            </div>
+            <div class="container"><img alt="avatar" class="image" src="Darshpreet Uppal.jpg">
+                <div class="overlay">Darshpreet Uppal</div>
+            </div>
+            <div class="container"><img alt="avatar" class="image" src="Garima Gupta.jpeg">
+                <div class="overlay">Garima Gupta</div>
+            </div>
+            <div class="container"><img alt="avatar" class="image" src="Archit Gupta.jpeg">
+                <div class="overlay">Archit Gupta</div>
+            </div>
+            <div class="container"><img alt="avatar" class="image" src="Arjun Arora.jpeg">
+                <div class="overlay">Arjun Arora</div>
+            </div>
+            <div class="container"><img alt="avatar" class="image" src="Kartik Chauhan.jpeg">
+            <div class="overlay">Kartik Chauhan</div>
+            </div>
+            <div class="container"><img alt="avatar" class="image" src="Diksha Kaushal.jpeg">
+                <div class="overlay">Diksha Kaushal</div>
+            </div>
+        </div>
+
+</section>
+    <div id="contact_us">
+        <h1>Contact Us</h1>
+    </div>
+    <form>
+        <textarea name="mytext" rows="10" cols="30" placeholder="What would you like to say.."></textarea>
+
+        <center><input class="submit_button" type="Submit" value="Submit" onclick="submit()">
+            </center>
+    </form>
+
+<section>
+
+        <center>
+        <footer>
+            
+            <a class="fa fa-instagram" href=""></a>
+            <a class="fa fa-facebook" href=""></a>
+            <a class="fa fa-linkedin" href=""></a>
+            <a class="fa fa-twitter" href=""></a>
+
+
+        </footer>
+        </center>
+    
+</section>
+
+        
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
